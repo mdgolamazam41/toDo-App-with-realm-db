@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3B25361DB4CC850064A827 /* realmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B25351DB4CC850064A827 /* realmDB.swift */; };
+		CE3B25381DB4CE1F0064A827 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B25371DB4CE1F0064A827 /* TaskList.swift */; };
 		CE6A1F031DB4C7E1009952D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A1F021DB4C7E1009952D0 /* AppDelegate.swift */; };
 		CE6A1F051DB4C7E1009952D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A1F041DB4C7E1009952D0 /* ViewController.swift */; };
 		CE6A1F081DB4C7E1009952D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6A1F061DB4C7E1009952D0 /* Main.storyboard */; };
 		CE6A1F0B1DB4C7E1009952D0 /* toDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE6A1F091DB4C7E1009952D0 /* toDoList.xcdatamodeld */; };
 		CE6A1F0D1DB4C7E1009952D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6A1F0C1DB4C7E1009952D0 /* Assets.xcassets */; };
 		CE6A1F101DB4C7E1009952D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6A1F0E1DB4C7E1009952D0 /* LaunchScreen.storyboard */; };
+		CE8BD73F1DB4F5B700CC77F8 /* storeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BD73E1DB4F5B700CC77F8 /* storeData.swift */; };
+		CE8BD7411DB4F64A00CC77F8 /* realmSingleTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BD7401DB4F64A00CC77F8 /* realmSingleTon.swift */; };
+		E61CA240F791C469364151BF /* Pods_toDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7288E276415F3BCEE707C6 /* Pods_toDoList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38AC1E79DB1F6E85F07F1E7A /* Pods-toDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toDoList/Pods-toDoList.debug.xcconfig"; sourceTree = "<group>"; };
+		7781D4EC4C2CDB67E7461D46 /* Pods-toDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-toDoList/Pods-toDoList.release.xcconfig"; sourceTree = "<group>"; };
+		BE7288E276415F3BCEE707C6 /* Pods_toDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3B25351DB4CC850064A827 /* realmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = realmDB.swift; sourceTree = "<group>"; };
+		CE3B25371DB4CE1F0064A827 /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		CE6A1EFF1DB4C7E1009952D0 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6A1F021DB4C7E1009952D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6A1F041DB4C7E1009952D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		CE6A1F0C1DB4C7E1009952D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6A1F0F1DB4C7E1009952D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6A1F111DB4C7E1009952D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8BD73E1DB4F5B700CC77F8 /* storeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storeData.swift; sourceTree = "<group>"; };
+		CE8BD7401DB4F64A00CC77F8 /* realmSingleTon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = realmSingleTon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61CA240F791C469364151BF /* Pods_toDoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		375350460F03EB6A92378581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7288E276415F3BCEE707C6 /* Pods_toDoList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		592DEED737CB89EA3B4D36DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38AC1E79DB1F6E85F07F1E7A /* Pods-toDoList.debug.xcconfig */,
+				7781D4EC4C2CDB67E7461D46 /* Pods-toDoList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE3B25341DB4CC170064A827 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE3B25351DB4CC850064A827 /* realmDB.swift */,
+				CE3B25371DB4CE1F0064A827 /* TaskList.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CE6A1EF61DB4C7E1009952D0 = {
 			isa = PBXGroup;
 			children = (
 				CE6A1F011DB4C7E1009952D0 /* toDoList */,
 				CE6A1F001DB4C7E1009952D0 /* Products */,
+				592DEED737CB89EA3B4D36DB /* Pods */,
+				375350460F03EB6A92378581 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +100,13 @@
 				CE6A1F021DB4C7E1009952D0 /* AppDelegate.swift */,
 				CE6A1F041DB4C7E1009952D0 /* ViewController.swift */,
 				CE6A1F061DB4C7E1009952D0 /* Main.storyboard */,
+				CE3B25341DB4CC170064A827 /* Model */,
 				CE6A1F0C1DB4C7E1009952D0 /* Assets.xcassets */,
 				CE6A1F0E1DB4C7E1009952D0 /* LaunchScreen.storyboard */,
 				CE6A1F111DB4C7E1009952D0 /* Info.plist */,
 				CE6A1F091DB4C7E1009952D0 /* toDoList.xcdatamodeld */,
+				CE8BD73E1DB4F5B700CC77F8 /* storeData.swift */,
+				CE8BD7401DB4F64A00CC77F8 /* realmSingleTon.swift */,
 			);
 			path = toDoList;
 			sourceTree = "<group>";
@@ -74,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE6A1F141DB4C7E1009952D0 /* Build configuration list for PBXNativeTarget "toDoList" */;
 			buildPhases = (
+				9F901AE4707ABEEAC2112766 /* [CP] Check Pods Manifest.lock */,
 				CE6A1EFB1DB4C7E1009952D0 /* Sources */,
 				CE6A1EFC1DB4C7E1009952D0 /* Frameworks */,
 				CE6A1EFD1DB4C7E1009952D0 /* Resources */,
+				A866A1F90B562D0E9147C927 /* [CP] Embed Pods Frameworks */,
+				B15A3CD32B80F0352B141D1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,14 +181,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F901AE4707ABEEAC2112766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A866A1F90B562D0E9147C927 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toDoList/Pods-toDoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15A3CD32B80F0352B141D1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-toDoList/Pods-toDoList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE6A1EFB1DB4C7E1009952D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE6A1F051DB4C7E1009952D0 /* ViewController.swift in Sources */,
+				CE3B25381DB4CE1F0064A827 /* TaskList.swift in Sources */,
 				CE6A1F0B1DB4C7E1009952D0 /* toDoList.xcdatamodeld in Sources */,
 				CE6A1F031DB4C7E1009952D0 /* AppDelegate.swift in Sources */,
+				CE8BD7411DB4F64A00CC77F8 /* realmSingleTon.swift in Sources */,
+				CE8BD73F1DB4F5B700CC77F8 /* storeData.swift in Sources */,
+				CE3B25361DB4CC850064A827 /* realmDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +351,7 @@
 		};
 		CE6A1F151DB4C7E1009952D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AC1E79DB1F6E85F07F1E7A /* Pods-toDoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = toDoList/Info.plist;
@@ -263,6 +363,7 @@
 		};
 		CE6A1F161DB4C7E1009952D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7781D4EC4C2CDB67E7461D46 /* Pods-toDoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = toDoList/Info.plist;
@@ -291,6 +392,7 @@
 				CE6A1F161DB4C7E1009952D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
